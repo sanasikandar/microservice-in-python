@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine and Server Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        h1 {
+            margin-top: 0;
+        }
+        .medicine-list {
+            list-style: none;
+            padding: 0;
+        }
+        .medicine-list li {
+            background-color: #f9f9f9;
+            margin: 10px 0;
+            padding: 10px;
+            border-left: 5px solid #007bff;
+        }
+        .server-details {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .server-details h1 {
+            text-align: center;
+        }
+        .server-details p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Medicine and Server Details Page</h1>
+    </header>
+    
+    <div class="container">
+        <h2>Available Medicines</h2>
+        <ul class="medicine-list">
+            <li>
+                <h3>Paracetamol</h3>
+                <p>Used for pain relief and fever reduction.</p>
+            </li>
+            <li>
+                <h3>Ibuprofen</h3>
+                <p>Anti-inflammatory medication commonly used for pain and swelling.</p>
+            </li>
+            <li>
+                <h3>Aspirin</h3>
+                <p>Used to reduce pain, fever, or inflammation.</p>
+            </li>
+            <li>
+                <h3>Amoxicillin</h3>
+                <p>An antibiotic used to treat a wide variety of bacterial infections.</p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="server-details">
+        <h1>Server Details</h1>
+        <p><strong>Hostname:</strong> {{ hostname }}</p>
+        <p><strong>IP Address:</strong> {{ ip_address }}</p>
+    </div>
+</body>
+</html>
+
